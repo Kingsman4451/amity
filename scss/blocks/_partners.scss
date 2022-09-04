@@ -1,0 +1,32 @@
+
+.partners {
+  background-color: $primary-red;
+  padding: 60px 0;
+}
+
+.partners__item {
+  opacity: 0.5;
+}
+
+@include breakpoint-down(1400px){
+  .partners__item-img {
+      width: 150px;
+      height: 100%;
+  }
+}
+
+@include breakpoint-down(1024px){
+  .partners__list {
+    flex-wrap: wrap;
+  }
+  .partners__item-img {
+      width: 150px;
+      height: 100%;
+  }
+}
+
+@include breakpoint-down(768px){
+  .partners__list {
+    flex-wrap: wrap;
+  }
+}

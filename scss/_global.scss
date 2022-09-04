@@ -1,0 +1,82 @@
+.map {
+  height: 420px;
+  background-image: url("../assets/images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@include breakpoint-down(425px){
+  .map {
+    height: 320px;
+    background-image: url("../assets/images/map.png");
+    background-position: center;
+  }
+}
+
+
+.about-body {
+  background-color:#F4F4F8;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550px;
+    background-image: url("../assets/images/bg-1.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+}
+
+.founders-body {
+  background-color:#F4F4F8;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 350px;
+    background-image: url("../assets/images/bg-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
+}
+
+.banding-body {
+  background-color:#F4F4F8;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 420px;
+    background-image: url("../assets/images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .founders-body {
+    &::after {
+      top: 80px;
+    }
+  }
+}
+
+@include breakpoint-down(575px) {
+  .founders-body {
+    &::after {
+      top: 50px;
+    }
+  }
+}

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div
+          class="header__inner d-flex justify-content-between align-items-center"
+        >
+          <a class="logo" href="index.html">
+            <img
+              class="logo__img"
+              src="./assets/images/logo.svg"
+              width="458"
+              height="164"
+              alt="logo"
+            />
+          </a>
+          <div
+            class="header__right d-flex align-items-center justify-content-between gap-3"
+          >
+            <input
+              type="checkbox"
+              class="header__reasponsive-checkbox"
+              id="menu"
+            />
+            <nav class="navbar p-0">
+              <div
+                class="header__responsive-box d-flex d-xxl-none align-items-center gap-2"
+              >
+                <label
+                  class="header__reasponsive border-0 bg-transparent"
+                  for="menu"
+                >
+                  <img src="./assets/images/menu-icon.png" alt="" />
+                </label>
+                <button class="border-0 bg-transparent">
+                  <img src="./assets/images/russian.png" alt="" />
+                </button>
+                <button class="border-0 bg-transparent">
+                  <img src="./assets/images/english.png" alt="" />
+                </button>
+                <button class="border-0 bg-transparent">
+                  <img src="./assets/images/uzbek.png" alt="" />
+                </button>
+              </div>
+              <ul class="navbar__list d-flex list-unstyled gap-1 m-0">
+                <li class="navbar__list-item active-item rounded-pill">
+                  <a
+                    class="navbar__list-link text-decoration-none text-uppercase"
+                    href="index.html"
+                  >
+                    bariatic surgerey
+                  </a>
+                </li>
+
+                <li class="navbar__list-item">
+                  <a
+                    class="navbar__list-link text-decoration-none text-uppercase"
+                    href="about.html"
+                  >
+                    about us
+                  </a>
+                </li>
+
+                <li class="navbar__list-item">
+                  <a
+                    class="navbar__list-link text-decoration-none text-uppercase"
+                    href="news-page.html"
+                  >
+                    news
+                  </a>
+                </li>
+
+                <li class="navbar__list-item">
+                  <a
+                    class="navbar__list-link text-decoration-none text-uppercase"
+                    href="index.html"
+                  >
+                    contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__box">
+              <button class="header__language border-0 bg-transparent">
+                <img src="./assets/images/russian.png" alt="" />
+              </button>
+              <button class="header__language border-0 bg-transparent">
+                <img src="./assets/images/english.png" alt="" />
+              </button>
+              <button class="header__language border-0 bg-transparent">
+                <img src="./assets/images/uzbek.png" alt="" />
+              </button>
+              <label
+                class="header__reasponsive-label border-0 bg-transparent"
+                for="menu"
+              >
+                <img src="./assets/images/menu-icon.png" alt="" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="hero__carusel carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                  <div class="hero__content">
+                    <h2 class="hero__heading text-white">
+                      Inspiring adventure and confidence
+                    </h2>
+                    <p class="hero__text text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit placerat sit purus molestie.
+                    </p>
+                    <button class="button text-uppercase rounded-pill border-0">
+                      join us
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                  <div class="hero__content">
+                    <h2 class="hero__heading text-white">
+                      Inspiring adventure and confidence
+                    </h2>
+                    <p class="hero__text text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit placerat sit purus molestie.
+                    </p>
+                    <button class="button text-uppercase rounded-pill border-0">
+                      join us
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                  <div class="hero__content">
+                    <h2 class="hero__heading text-white">
+                      Inspiring adventure and confidence
+                    </h2>
+                    <p class="hero__text text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit placerat sit purus molestie.
+                    </p>
+                    <button class="button text-uppercase rounded-pill border-0">
+                      join us
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surgery">
+      <div class="container">
+        <div class="surgery__inner">
+          <h3 class="surgery__heading">Bariartic surgery</h3>
+          <ul
+            class="surgery__cards list-unstyled p-0 d-flex flex-wrap align-items-center justify-content-center gap-5"
+          >
+            <li class="surgery__card">
+              <p class="surgery__card-text">BPD-DS PROCEDURE</p>
+            </li>
+
+            <li class="surgery__card">
+              <p class="surgery__card-text">BPD-DS PROCEDURE</p>
+            </li>
+
+            <li class="surgery__card">
+              <p class="surgery__card-text">BPD-DS PROCEDURE</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__inner">
+          <p class="news__top-text">Relevant news</p>
+          <h3 class="news__heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h3>
+          <p class="news__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            porro, aliquid reprehenderit iusto inventore sint beatae ipsum
+            impedit in sit illum distinctio sequi quisquam et hic tempore
+          </p>
+
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide carousel-dark"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="news__carusel bg-transparent carousel-inner">
+              <div class="carousel-item active">
+                <ul class="news__cards list-unstyled bg-transparent p-0 m-0">
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-4.jpg"
+                        alt="img"
+                        width="420"
+                        height="320"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-5.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-6.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="news__cards list-unstyled p-0 m-0">
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-4.jpg"
+                        alt="img"
+                        width="420"
+                        height="320"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-5.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-6.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="news__cards list-unstyled p-0 m-0">
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-4.jpg"
+                        alt="img"
+                        width="420"
+                        height="320"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-5.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                  <li class="news__card">
+                    <div class="news__card-image">
+                      <img
+                        class="news__img"
+                        src="./assets/images/img-6.jpg"
+                        alt="img"
+                        width="420"
+                      />
+                      <p class="news__time">
+                        <span class="news__span-1">24</span>
+                        <span class="news__span-2">FEB</span>
+                        <span class="news__span-3">2022</span>
+                      </p>
+                    </div>
+                    <p class="news__card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span class="news__line"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon news__arrow-1"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon news__arrow-2"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-bottom">
+      <div class="container">
+        <div class="news-bottom__inner">
+          <ul class="news-bottom__list">
+            <li class="news-bottom__item">
+              <p class="news-bottom__text">
+                <span class="news-bottom__text--bold">83%</span>
+                <span class="news-bottom__text--thin"
+                  >of lost thier weight</span
+                >
+              </p>
+            </li>
+
+            <li class="news-bottom__item">
+              <p class="news-bottom__text">
+                <span class="news-bottom__text--bold">30 days</span>
+                <span class="news-bottom__text--thin">the fastest result </span>
+              </p>
+            </li>
+
+            <li class="news-bottom__item">
+              <p class="news-bottom__text">
+                <span class="news-bottom__text--bold">#1</span>
+                <span class="news-bottom__text--thin">Research university</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <div class="partners__inner">
+          <ul
+            class="partners__list d-flex gap-5 align-items-center justify-content-lg-between justify-content-center list-unstyled p-0 m-0"
+          >
+            <li class="partners__item">
+              <a href="#" class="partners__item-link">
+                <img
+                  class="partners__item-img"
+                  src="./assets/images/partner-1.png"
+                  alt="AQA"
+                  width="231"
+                  height="103"
+                />
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a href="#" class="partners__item-link">
+                <img
+                  class="partners__item-img"
+                  src="./assets/images/partner-2.png"
+                  alt="AQA"
+                  width="340"
+                  height="102"
+                />
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a href="#" class="partners__item-link">
+                <img
+                  class="partners__item-img"
+                  src="./assets/images/partner-3.png"
+                  alt="AQA"
+                  width="239"
+                  height="71"
+                />
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a href="#" class="partners__item-link">
+                <img
+                  class="partners__item-img"
+                  src="./assets/images/partner-5.png"
+                  alt="AQA"
+                  width="188"
+                  height="126"
+                />
+              </a>
+            </li>
+
+            <li class="partners__item">
+              <a href="#" class="partners__item-link">
+                <img
+                  class="partners__item-img"
+                  src="./assets/images/partner-6.png"
+                  alt="AQA"
+                  width="188"
+                  height="126"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner d-flex flex-column align-items-center">
+          <p class="news__top-text">Contact Us</p>
+          <h3 class="news__heading">Get In Touch</h3>
+          <p class="news__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            porro, aliquid reprehenderit iusto inventore sint beatae ipsum
+            impedit in sit illum distinctio sequi quisquam et hic tempore
+          </p>
+          <div
+            class="contact__body d-flex align-items-center justify-content-center gap-5"
+          >
+            <ul class="contact__body-list list-unstyled p-0 m-0">
+              <li class="contact__body-item">
+                <img
+                  src="./assets/images/email-icon.png"
+                  alt=""
+                  class="contact__item-img"
+                />
+                <div class="contact__item-content">
+                  <p class="contact__text">
+                    email us:<span class="contact__text--thin">
+                      admission@amityabudhabi.ae</span
+                    >
+                  </p>
+                </div>
+              </li>
+
+              <li class="contact__body-item">
+                <img
+                  src="./assets/images/phone-icon.png"
+                  alt=""
+                  class="contact__item-img"
+                />
+                <div class="contact__item-content">
+                  <p class="contact__text">
+                    call us:<span class="contact__text--thin"
+                      >Tel. +971 2503 9000</span
+                    >
+                  </p>
+                </div>
+              </li>
+
+              <li class="contact__body-item">
+                <img
+                  src="./assets/images/location-icon.png"
+                  alt=""
+                  class="contact__item-img"
+                />
+                <div class="contact__item-content">
+                  <p class="contact__text">
+                    Address:<span class="contact__text--thin text-capitalize">
+                      Al Bahya, E10, Exit 39<br />Abu Dhabi</span
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <form
+              action="http://echo.htmlacademy.ru"
+              method="POST"
+              class="contact__form"
+            >
+              <input
+                type="text"
+                placeholder="Your name"
+                class="contact__form-input"
+                name="name"
+              />
+
+              <input
+                type="text"
+                placeholder="Subject Title"
+                class="contact__form-input"
+                name="title"
+              />
+
+              <textarea
+                name="message"
+                class="contact__form-textarea"
+                placeholder="Your message"
+                cols="30"
+                rows="2"
+              ></textarea>
+              <input
+                type="checkbox"
+                id="check"
+                class="contact__form-checkbox"
+              />
+              <label class="contact__form-label d-inline-block" for="check">
+              </label>
+              <p class="contact__form-policy d-inline">
+                Accept
+                <a href="#" class="contact__form-policy--link"
+                  >Terms & Conditions</a
+                >
+                and
+                <a href="#" class="contact__form-policy--link"
+                  >Privacy Policy.</a
+                >
+              </p>
+              <button class="contact__form-btn btn rounded-pill">
+                send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map"></section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top d-flex">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/images/footer-logo.png"
+                alt="logo"
+                class="footer__logo"
+                width="387"
+                height="95"
+              />
+            </a>
+            <ul class="footer__nav d-flex justify-content-between">
+              <li class="footer__nav-menu">
+                <p class="footer__menu-title text-uppercase">about us</p>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="index.html"
+                      >Bariatric association</a
+                    >
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="founders.html">Founders</a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="hospital.html"
+                      >Our Hospital</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__nav-menu">
+                <p class="footer__menu-title text-uppercase">Surgery types</p>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="surgery.html"
+                      >Bypass surgery
+                    </a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="surgery.html"
+                      >Bypass surgery
+                    </a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="surgery.html"
+                      >Bypass surgery
+                    </a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="surgery.html"
+                      >Bypass surgery
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__nav-menu">
+                <p class="footer__menu-title text-uppercase">Information</p>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="index.html"
+                      >Membership</a
+                    >
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="news-page.html">News</a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="index.html">Join us</a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="index.html">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <ul
+            class="footer__socials d-flex justify-content-between list-unstyled"
+          >
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/facebook.png"
+                  alt="facebook"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">facebook</span>
+              </a>
+            </li>
+
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">twitter</span>
+              </a>
+            </li>
+
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.linkedien.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/linkedien.png"
+                  alt="linkedien"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">linkedien</span>
+              </a>
+            </li>
+
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/instagram.png"
+                  alt="instagram"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">instagram</span>
+              </a>
+            </li>
+
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.telegram.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/telegram.png"
+                  alt="telegram"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">telegram</span>
+              </a>
+            </li>
+
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link d-flex align-items-center gap-2 text-uppercase text-decoration-none"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/youtube.png"
+                  alt="youtube"
+                  class="footer__socials-img"
+                  width="32"
+                  height="32"
+                />
+                <span class="footer__socials-link--text">youtube</span>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text text-center">
+            Copyright © Bariatric Association 2022
+          </p>
+          <a class="to-top" href="#"
+            ><img src="./assets/images/scroll-up.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

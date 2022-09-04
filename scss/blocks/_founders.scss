@@ -1,0 +1,218 @@
+.founders {
+  position: relative;
+  z-index: 2;
+  margin-top: 300px;
+  margin-bottom: 80px;
+}
+
+.founders-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $font-family-robotoSerif;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin: 0;
+  &:nth-child(1) {
+    color: #fff;
+    background-color: $primary-yellow;
+  }
+
+  &:nth-child(2) {
+    color: $primary-yellow;
+    background-color: $primary-red;
+  }
+}
+
+.founders-title{
+  padding-top: 30px;
+  border-top: 1px solid $primary-yellow;
+}
+
+.founders-image {
+  width: 100%;
+}
+
+.founder-name {
+  font-size: 41px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #59595C
+}
+
+.founder-text{
+  font-size: 24px;
+  font-family: $font-family-robotoSerif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 28px;
+  color: #59595C;
+}
+
+
+
+.hospital{
+  height: 100%;
+}
+
+@include breakpoint-down(1400px) {
+  .doctors {
+    height: 1700px;
+  }
+}
+
+@include breakpoint-down(1200px) {
+
+  .doctors {
+    height: 100%;
+  }
+  .hospital{
+    height: 100%;
+  }
+}
+
+@include breakpoint-down(900px) {
+  .doctors {
+    height: 100%;
+  }
+
+  .hospital{
+    height: 100%;
+  }
+  .founder-name {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #59595C
+  }
+  
+}
+
+
+@include breakpoint-down(768px) {
+  .founders {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    height: 1750px;
+  }
+
+  .doctors {
+    height: 100%;
+  }
+
+  .hospital{
+    height: 100%;
+  }
+  .founders-link {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: $font-family-robotoSerif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -1%;
+    margin: 0;
+    &:nth-child(1) {
+      color: #fff;
+      background-color: $primary-yellow;
+    }
+  
+    &:nth-child(2) {
+      color: $primary-yellow;
+      background-color: $primary-red;
+    }
+  }
+  .founder-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #59595C
+  }
+  .founder-text{
+    font-size: 20px;
+    font-family: $font-family-robotoSerif;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 24px;
+    color: #59595C;
+  }
+}
+
+@include breakpoint-down(450px) {
+
+  .founders {
+    margin-bottom: 0;
+  }
+  .doctors {
+    height: 100%;
+  }
+  .hospital{
+    height: 100%;
+  }
+  .founder-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #59595C
+  }
+  .founder-text{
+    font-size: 16px;
+    font-family: $font-family-robotoSerif;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 24px;
+    color: #59595C;
+  }
+}
+
+@include breakpoint-down(350px) {
+
+  .founders {
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  .doctors {
+    height: 100%;
+  }
+  .hospital{
+    height: 100%;
+  }
+  .founders-link {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-family: $font-family-robotoSerif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: -1%;
+    margin: 0;
+    &:nth-child(1) {
+      color: #fff;
+      background-color: $primary-yellow;
+    }
+  
+    &:nth-child(2) {
+      color: $primary-yellow;
+      background-color: $primary-red;
+    }
+  }
+  .founder-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #59595C
+  }
+  .founder-text{
+    font-size: 14px;
+    font-family: $font-family-robotoSerif;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: #59595C;
+  }
+}

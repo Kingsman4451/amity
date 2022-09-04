@@ -1,0 +1,182 @@
+.surgery {
+  background-color: $primary-yellow;
+  padding: 60px 0;
+}
+
+.surgery__heading {
+  position: relative;
+  color: $primary-red;
+  text-transform: uppercase;
+  font-size: $font-size-7;
+  font-family: $font-family-cormorant;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -1%;
+  text-align: center;
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 116px;
+    height: 6px;
+    background-color: $primary-red;
+  }
+}
+
+.surgery__cards {
+  margin: 0 ;
+  margin-top: 30px;
+}
+
+.surgery__card {
+  position: relative;
+  width: 420px;
+  height: 739px;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  &:nth-child(1):before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/img-1.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100);
+    // background-position-y: -140px;
+  }
+
+  &:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/img-2.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100);
+    background-position-x: -340px;
+  }
+
+  &:nth-child(3):before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/img-1.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100);
+  }
+}
+.surgery__card-text {
+  text-align: center;
+  max-width: 380px;
+  position: absolute;
+  left: calc(50% - 190px);
+  bottom:40px;
+  color: $primary-yellow;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -1%;
+  font-family: $font-family-robotoSerif;
+  font-weight: 700;
+  padding: 20px 31.5px;
+  background-color: $primary-red;
+}
+
+@include breakpoint-down(768px){
+  .surgery__heading {
+    font-size: 40px;
+    line-height: 45px;
+
+  }
+
+  .surgery__card-text {
+    font-size: 32px;
+    line-height: 44px;
+    padding: 20px 31.5px;
+  }
+  
+}
+
+@include breakpoint-down(575px){
+
+
+  .surgery__card-text {
+    font-size: 32px;
+    line-height: 44px;
+    padding: 20px 31.5px;
+  }
+  .surgery__card {
+    width: 350px;
+    height: 550px;
+    border-radius: 30px;
+    &:nth-child(2):before {
+      background-position-x: -140px;
+    }
+  }
+
+  .surgery__heading {
+    font-size: 30px;
+    line-height: 35px;
+
+  }
+
+  .surgery__card-text {
+    left: calc(50% - 190px);
+    font-size: 30px;
+    line-height: 36px;
+    padding: 20px 31.5px;
+  }
+}
+
+@include breakpoint-down(425px){
+  .surgery__card-text {
+    left: calc(50% - 150px);
+    font-size: 28px;
+    line-height: 36px;
+    padding: 15px 25px;
+  }
+  .surgery__card {
+    width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    &:nth-child(2):before {
+      background-position-x: -140px;
+    }
+  }
+
+  .surgery__heading {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+}
+
+@include breakpoint-down(375px){
+  .surgery__card-text {
+    left: calc(50% - 130px);
+    font-size: 22px;
+    line-height: 36px;
+    padding: 15px 25px;
+  }
+  .surgery__card {
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    &:nth-child(2):before {
+      background-position-x: -140px;
+    }
+  }
+
+  .surgery__heading {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+}

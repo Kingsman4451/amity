@@ -1,0 +1,29 @@
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+}
+
+@include breakpoint-down(1400px){
+  .logo__img {
+    width: 300px;
+    height: 100%;
+  }
+}
+
+@include breakpoint-down(768px){
+  .logo__img {
+    width: 250px;
+    height: 100%;
+  }
+}
+
+@include breakpoint-down(425px){
+  .logo__img {
+    width: 150px;
+    height: 100%;
+  }
+}
+

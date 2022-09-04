@@ -1,0 +1,163 @@
+.footer {
+  position: relative;
+  background-color: $primary-red;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+
+.footer__top {
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.footer__nav {
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-title {
+  font-size: $font-size-5;
+  font-family: $font-family-cormorant;
+  font-weight: 500;
+  line-height: 29px;
+  color: $primary-yellow;
+  margin-bottom: 20px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 54px;
+  border-top: 1px solid $primary-yellow;
+}
+.footer__menu-item {
+  margin-bottom: 14px;
+}
+.footer__menu-link {
+  font-size: $font-size-1;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    color: $primary-yellow;
+  }
+}
+
+.footer__socials {
+  padding: 21px 0 !important;
+  border-top: 1px solid $primary-yellow;
+  border-bottom: 1px solid $primary-yellow;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.footer__socials-link {
+  color: $primary-yellow;
+  font-weight: 500;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.footer__bottom-text {
+  color: $primary-yellow;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.to-top {
+  display: block;
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 20px;
+}
+
+@include breakpoint-down(1200px) {
+  .footer__top {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .to-top img {
+    width: 50px;
+  }
+}
+
+@include breakpoint-down(900px) {
+  
+.footer__socials-link {
+  &--text {
+    display: none;
+  }
+}
+}
+
+@include breakpoint-down(768px) {
+  .footer__logo {
+    width: 250px;
+    height: 100%;
+  }
+  .footer__nav {
+    gap: 30px;
+  }
+.footer__menu-title {
+  font-size: $font-size-4;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.footer__menu-link {
+  font-size: $font-size-1;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    color: $primary-yellow;
+  }
+}
+
+}
+
+@include breakpoint-down(575px) {
+  .footer__nav {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav-menu {
+    text-align: center;
+  }
+
+  .footer__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 0px;
+    border-top: 1px solid $primary-yellow;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 8px;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .footer__logo {
+    width: 200px;
+    height: 100%;
+  }
+
+  .to-top img {
+    width: 40px;
+  }
+}

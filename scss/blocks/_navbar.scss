@@ -1,0 +1,117 @@
+
+.navbar__list-item {
+  padding: 10px 25px;
+  &:hover .navbar__list-link{
+    color: #cd335c
+  }
+  &:hover .red-link{
+    color: #fff
+  }
+}
+.navbar__list-link {
+  color:$primary-red;
+  font-size: $font-size-3;
+  font-family: $font-family-robotoSerif;
+  font-weight: $font-weight-bold;
+}
+
+.active-item {
+  background-color: $primary-yellow;
+}
+.header__reasponsive-checkbox {
+  display: none;
+}
+
+.header__responsive-box {
+  display: none !important;
+}
+
+@include breakpoint-down(1400px){
+  .navbar {
+    display: inline-block !important;
+    width: 400px !important;
+    height: 100vh !important;
+    position: absolute !important;
+    right: -20px;
+    top: 0;  
+    background-color: rgb(255, 255, 255);
+    transform: translateX(400px);
+    transition: all 0.3s ease;
+  }
+  .red-navbar {
+    top: -20px;
+    background-color: $primary-red;
+  }
+  .navbar__list {
+    flex-direction: column !important;
+    padding-top: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .header__reasponsive-checkbox:checked ~ .navbar {
+    transform: translateX(0);
+  }
+
+  .header__responsive-box {
+    margin-left: 20px;
+    margin-top: 30px;
+  } 
+}
+
+
+@include breakpoint-down(575px){
+  .navbar {
+    width: 230px !important;
+  }
+
+  .navbar__list {
+    flex-direction: column !important;
+    padding-top: 30px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .navbar__list-link {
+    color:$primary-red;
+    font-size: $font-size-1;
+    font-family: $font-family-robotoSerif;
+    font-weight: $font-weight-bold;
+  }
+
+  .header__responsive-box {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+}
+
+
+@include breakpoint-down(375px){
+  .navbar {
+    width: 230px !important;
+  }
+
+  .navbar__list {
+    flex-direction: column !important;
+    padding-top: 30px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .navbar__list-link {
+    color:$primary-red;
+    font-size: 12px;
+    font-family: $font-family-robotoSerif;
+    font-weight: $font-weight-bold;
+  }
+
+  .header__responsive-box {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+.red-link {
+  color: #fff;
+}
